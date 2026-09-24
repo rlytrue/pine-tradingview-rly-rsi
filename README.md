@@ -1,6 +1,6 @@
 # pine-tradingview-rly-rsi
 
-```pinescript```
+```pinescript
 
 //@version=6
 indicator('Rlytrue RSI Alerts', overlay=false)
@@ -43,3 +43,4 @@ if rsiValue >= overbought
     alert('RSI Перекупленность (>70)! Текущее значение: ' + str.tostring(rsiValue), alert.freq_once_per_bar)
 if rsiValue <= oversold
     alert('RSI Перепроданность (<30)! Текущее значение: ' + str.tostring(rsiValue), alert.freq_once_per_bar)
+```
